@@ -1,0 +1,29 @@
+.button {
+  height: 26px;
+  color: #7a7a7a;
+  background-color: transparent;
+  border-width: 0;
+  box-shadow: 0 0 0 1px var(--border) inset;
+  border-radius: 13px;
+  position: relative;
+  overflow: hidden;
+
+  &__bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--primary1);
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    text-shadow: 1px 0px 0px var(--white), -1px 0px 0px var(--white), 0px -1px 0px var(--white), 0px 1px 0px var(--white);
+  }
+}
+
+.percentageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}

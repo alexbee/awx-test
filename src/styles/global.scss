@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: var(--linkColor, var(--primary1));
+
+  &:hover {
+    text-decoration: none;
+  }
+}

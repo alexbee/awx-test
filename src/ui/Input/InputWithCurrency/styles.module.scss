@@ -1,0 +1,28 @@
+.input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  font-size: 32px;
+  font-weight: 600;
+
+  &__fake {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+  }
+
+  &__label {
+    color: var(--primary1);
+    margin-left: 12px;
+    flex: auto;
+  }
+
+  &__container {
+    min-width: 0;
+    display: flex;
+  }
+
+  &__control {
+    max-width: 100%;
+  }
+}

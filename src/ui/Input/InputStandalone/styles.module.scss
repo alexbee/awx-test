@@ -1,0 +1,82 @@
+.input {
+  appearance: none;
+  border: 1px solid var(--secondary1);
+  border-radius: var(--controlsBorderRadius, 5px);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--text1);
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  height: var(--controlsHeight, 70px);
+  padding: 0px;
+  text-overflow: ellipsis;
+  width: 100%;
+  //font-family: $fontFamily;
+  font-family: inherit;
+  background-color: var(--bg1);
+  outline: none;
+
+  &:focus {
+    //border-color: var(--primary1);
+    //box-shadow: 0 0 0 1px var(--primary1) inset;
+  }
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:invalid {
+    color: var(--fail);
+  }
+
+  &._error {
+    border-color: var(--fail);
+  }
+
+  &._success {
+    border-color: var(--success);
+  }
+
+  &:focus._success {
+    border-color: var(--success);
+    box-shadow: 0 0 0 1px var(--success) inset;
+  }
+
+  &._disabled,
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &._noBorder {
+    border: none;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  //@include xs {
+  //  height: 36px;
+  //  font-size: 12px;
+  //}
+}
+
+.textarea {
+  &#{&} {
+    height: 104px;
+    padding: 12px 12px;
+    max-width: 100%;
+
+    // TODO: remove after deleting global styles
+    border: 1px solid var(--secondary1);
+    caret-color: initial;
+
+    &:focus {
+      border-color: var(--primary1);
+      box-shadow: 0 0 0 1px var(--primary1) inset;
+    }
+    // !TODO: remove after deleting global styles
+  }
+}

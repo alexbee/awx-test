@@ -1,0 +1,32 @@
+$margins: 2, 4, 8, 12, 16, 20, 24, 32, 42, 52;
+
+@mixin generateMargins($direction: "bottom") {
+  @each $margin in $margins {
+    &_#{$margin} {
+      margin-#{$direction}: #{$margin}px;
+    }
+  }
+}
+
+.spacer {
+  background: red;
+  height: 20px;
+
+  &_margin {
+    @include generateMargins;
+  }
+
+  &_marginRight {
+    @include generateMargins("right");
+  }
+
+  //@include xs {
+  //  &_xsMargin {
+  //    @include generateMargins;
+  //  }
+  //
+  //  &_xsMarginRight {
+  //    @include generateMargins('right');
+  //  }
+  //}
+}

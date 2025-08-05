@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,100..900&display=swap");
+
+:root {
+  --primary1: #168acd;
+  --white: #ffffff;
+  --border: #dbdbdb;
+
+  --buttonBackgroundColor: var(--primary1);
+  --buttonTextColor: var(--white);
+
+  --buttonBorderRadius: 6;
+}
